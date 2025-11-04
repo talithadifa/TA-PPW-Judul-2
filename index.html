@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Talitha Difa</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#hero" class="logo">Talitha's Page</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#tentang">Tentang Saya</a></li>
+                    <li><a href="#keahlian">Keahlian</a></li>
+                    <li><a href="#projek">Projek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>Talitha Dalilah Difa</h1>
+                <p class="hero-subtitle">Mahasiswa Teknik Informatika | UI/UX Designer | Web Developer</p>
+                <a href="#tentang" class="btn btn-primary">Details</a>
+            </div>
+        </section>
+
+        <section id="tentang" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="about-content">
+                    <img src="Pas Foto Talitha.jpg" alt="Foto Profil Talitha Difa" class="profile-pic">
+                    <div class="about-text">
+                        <h3>Halo! Saya Talitha.</h3>
+                        <p>
+                            Saya adalah seorang mahasiswa Teknik Informatika di Universitas Lampung yang tertarik pada perancangan sistem dan pengalaman pengguna (UI/UX). Saya berfokus pada bagaimana teknologi dapat memecahkan masalah nyata dengan cara yang efisien.
+                        </p>
+                        <p>
+                            Saya memiliki pengalaman dalam membangun aplikasi web dari tahap analisis kebutuhan, perancangan mockup di Figma, hingga implementasi front-end menggunakan HTML, CSS, dan JavaScript. Saya selalu tertarik untuk belajar teknologi baru dan berkolaborasi dalam tim untuk menciptakan produk digital yang bermanfaat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="keahlian" class="section-padding section-bg">
+            <div class="container">
+                <h2 class="section-title">Keahlian</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML, CSS, & JavaScript Dasar</div>
+                    <div class="skill-item">Desain Antarmuka (UI/UX)</div>
+                    <div class="skill-item">Desain Prototyping (Figma)</div>
+                    <div class="skill-item">Analisis & Perancangan Sistem</div>
+                    <div class="skill-item">Pengembangan Web Responsif</div>
+                    <div class="skill-item">Manajemen Proyek</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projek" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Projek</h2>
+                <div class="project-grid">
+                    <article class="card">
+                        <h3>Sistem Informasi UNIBIKE</h3>
+                        <p>Merancang dan membangun prototipe sistem peminjaman sepeda di lingkungan kampus Universitas Lampung untuk mendukung mobilitas ramah lingkungan.</p>
+                        <a href="https://www.figma.com/design/6zbgsuQ4E1CLfv5JmUsX1z/mock-up-imk-unibike?node-id=0-1&t=1t0c63E92Mt92uyY-1" class="btn btn-secondary">Lihat Desain</a>
+                    </article>
+                    
+                    <article class="card">
+                        <h3>Website Talitha</h3>
+                        <p>Proyek portofolio pribadi yang sedang Anda lihat. Dibangun murni dengan HTML dan CSS, menampilkan desain biru pastel yang futuristik.</p>
+                        <a href="https://github.com/talithadifa/WebsiteTalitha" target="_blank" class="btn btn-secondary">Lihat Kode</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Klasifikasi Nilai Akademik (KNN)</h3>
+                        <p>Implementasi algoritma K-Nearest Neighbors (KNN) untuk memprediksi dan mengklasifikasikan nilai akademik mahasiswa.</p>
+                        <a href="https://github.com/talithadifa/KNN-Klasifikasi-Nilai-Akademik-Talitha" target="_blank" class="btn btn-secondary">Lihat Kode</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section-padding section-bg">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p class="contact-subtitle">
+                    Saya terbuka untuk kolaborasi dan diskusi, hubungi saya melalui media sosial atau formulir di bawah ini.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/talitha.difa"   class="social-btn">Instagram</a>
+                    <a href="http://www.linkedin.com/in/talitha-dalilah-difa-47613a294" class="social-btn">LinkedIn</a>
+                    <a href="https://github.com/talithadifa" class="social-btn">GitHub</a>
+                </div>
+
+                <div class="form-container">
+                    <form action="mailto:talithadaliladifa@gmail.com" method="POST" enctype="text/plain">
+                        <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                        <input type="text" id="nama" name="Nama" required>
+                        
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="Email" required>
+                        
+                        <label for="subjek">Subjek</label>
+                        <input type="text" id="subjek" name="Subjek">
+                        
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="Pesan" rows="5" placeholder="Tuliskan pesan Anda..."></textarea>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Talitha's Page</p>
+        </div>
+    </footer>
+
+</body>
+</html>
