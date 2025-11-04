@@ -1,10 +1,10 @@
 :root {
-    --primary-blue: #a0d2eb;
-    --secondary-blue: #81a8c7;
-    --light-bg: #f4f8ff;   
-    --dark-text: #2c3e50;        
+    --primary-pink: #f8c8dc;  
+    --secondary-pink: #f4a9c4;  
+    --light-bg: #fff6fa;        
+    --dark-text: #2c3e50;       
     --white: #ffffff;
-    --border-light: #dbe9f6;
+    --border-light: #f8d8e5;      
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -45,7 +45,7 @@ body {
     color: var(--dark-text);
     margin-bottom: 40px;
     padding-bottom: 10px;
-    border-bottom: 3px solid var(--primary-blue);
+    border-bottom: 3px solid var(--primary-pink);
     display: inline-block;
     position: relative;
     left: 50%;
@@ -55,7 +55,7 @@ body {
 .main-header {
     background-color: var(--white);
     padding: 15px 0;
-    position: sticky; 
+    position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -70,16 +70,16 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--dark-text);
+    color: var(--secondary-pink);
     text-decoration: none;
 }
 
 .main-nav ul {
-    list-style: none; 
+    list-style: none;
 }
 
 .main-nav li {
-    display: inline-block; 
+    display: inline-block;
     margin-left: 20px;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .main-nav a:hover {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-pink);
     color: var(--white);
 }
 
@@ -108,24 +108,24 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--secondary-blue);
+    background-color: var(--secondary-pink);
     color: var(--white);
-    border: 2px solid var(--secondary-blue);
+    border: 2px solid var(--secondary-pink);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-blue);
-    border-color: var(--primary-blue);
+    background-color: var(--primary-pink);
+    border-color: var(--primary-pink);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--secondary-blue);
-    border: 2px solid var(--primary-blue);
+    color: var(--secondary-pink);
+    border: 2px solid var(--primary-pink);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-pink);
     color: var(--white);
 }
 
@@ -133,7 +133,6 @@ body {
     background: url('background.png');
     background-size: cover;
     background-position: center;
-    
     height: 80vh;
     display: flex;
     align-items: center;
@@ -142,14 +141,16 @@ body {
 
 .hero-section h1 {
     font-size: 3.5rem;
-    color: var(--white); 
+    color: var(--white);
     margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
     color: var(--white);
     margin-bottom: 30px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .about-content {
@@ -162,13 +163,13 @@ body {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%; 
-    border: 5px solid var(--primary-blue);
+    border-radius: 50%;
+    border: 5px solid var(--primary-pink);
     box-shadow: var(--shadow);
 }
 
 .about-text {
-    flex: 1; 
+    flex: 1;
 }
 
 .about-text h3 {
@@ -187,15 +188,15 @@ body {
 .skill-item {
     background-color: var(--light-bg);
     border: 1px solid var(--border-light);
-    color: var(--secondary-blue);
+    color: var(--secondary-pink);
     padding: 12px 22px;
-    border-radius: 25px; 
+    border-radius: 25px;
     font-weight: 500;
     transition: 0.3s;
 }
 
 .skill-item:hover {
-    background-color: var(--secondary-blue);
+    background-color: var(--secondary-pink);
     color: var(--white);
     transform: translateY(-3px);
     box-shadow: var(--shadow);
@@ -211,8 +212,8 @@ body {
 .card {
     background-color: var(--white);
     border: 1px solid var(--border-light);
-    border-radius: 8px; 
-    padding: 25px; 
+    border-radius: 8px;
+    padding: 25px;
     box-shadow: var(--shadow);
     width: 300px;
     transition: 0.3s;
@@ -244,7 +245,7 @@ body {
 }
 
 .social-btn {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-pink);
     color: var(--dark-text);
     padding: 10px 25px;
     margin: 5px;
@@ -256,7 +257,7 @@ body {
 }
 
 .social-btn:hover {
-    background-color: var(--secondary-blue);
+    background-color: var(--secondary-pink);
     color: var(--white);
     transform: scale(1.05);
 }
@@ -295,8 +296,8 @@ body {
 .form-container input[type="email"]:focus,
 .form-container textarea:focus {
     outline: none;
-    border-color: var(--primary-blue);
-    box-shadow: 0 0 8px rgba(160, 210, 235, 0.5);
+    border-color: var(--primary-pink);
+    box-shadow: 0 0 8px rgba(248, 200, 220, 0.5);
 }
 
 .form-container .required {
